@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*=================================================================== 
+
+   -------------------------------------------------------------------
+*  Template Name: Bangladesh National Portal
+*  Template URI: http://www.bangladesh.gov.bd
+*  Author Name: Humayun Ahmed
+*  Author URI: https://www.facebook.com/humayunahmed8
+*  Author Web: https://www.humayunbd.com
+   -------------------------------------------------------------------
+
+
+    * Customized and Used:
+    -----------------------
+
+*   01. jquery_1.11.3.min.js
+*   02. Owl-carousel
+
+
+    * Template Section Overview:
+    -------------------------------
+    
+*   01. Header Area
+*   02. Main Menu 
+*   03. Main Content
+*   04. Footer Area
+
+===================================================================*/
+
+/*==== Base CSS ====*/
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 5px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0) url("../img/body_bg.gif") no-repeat scroll center center;
+    color: #000;
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/*==== End Base CSS ====*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* ==================
+ 01. Header Area
+ ====================*/
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #9e5bba;
+    border-bottom: 1px solid red;
+    color: #fff;
+    padding: 10px;
+}
+
+.header-top-right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-top-right span {
+    padding-right: 15px;
+}
+
+.header-top-right:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: #ddd;
+    left: 62%;
+    top: -3px;
+}
+
+.header-top-right {
+    position: relative;
+}
+
+.header-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff none repeat scroll 0 0;
+    position: relative;
+    padding: 14px 15px;
+}
+
+.header-bottom-left {
+    flex-basis: 30%;
+}
+
+.search-bar input[type="text"] {
+    width: 309px;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+
+.search-bar input[type="submit"] {
+    background: #eee -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0%, rgba(0, 0, 0, .2) 100%);
+    border: 1px solid #aaa;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #444;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 0 1px rgba(255, 255, 255, .75);
+    cursor: pointer;
+    padding: 6px 6px;
+    text-transform: uppercase;
+}
+
+.header-bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    flex-basis: 50%;
+}
+
+.header-bottom-right * {
+    display: inline-block;
+}
+
+.social-panel h3 {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.social-links a img {
+    padding: 0 20px;
+}
+
+.search-bar {
+    padding-top: 20px;
+}
+
+.social-panel {
+    position: relative;
+}
+
+.social-panel:before {
+    position: absolute;
+    content: "";
+    background: #ddd;
+    height: 100%;
+    width: 2px;
+    left: -11px;
+    top: 0;
+}
+
+/*===================
+ 02. Main Menu
+ ====================*/
+.main-menu {
+    background: #eee;
+}
+
+.main-menu nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-menu nav ul li a {
+    text-decoration: none;
+    border-right: 1px solid #d1d1d1;    /* display: -webkit-box; */
+    padding: 10px 8px;
+    font-size: 14px;
+    display: block;
+}
+
+.main-menu nav ul li a:hover {
+    background: #70bf42;
+    color: #fff;
+}
+
+/*===================
+ 03. Main Content
+===================== */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.right-panel ul {
+    list-style: none;
+}
+
+.right-panel ul li a img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.left-panel {
+    flex-basis: 70%;
+}
+
+.right-panel {
+    flex-basis: 30%;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+.list-item h5, .notice h5 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #69308f;
+    margin-bottom: 10px;
+}
+
+.notice span {
+    text-align: right;
+    display: block;
+    margin-right: 10px;
+}
+
+.notice h5 {
+    padding-left: 10px;
+}
+
+.initiatives {
+    flex-basis: 55%;
+    padding-right: 8px;
+}
+
+.news {
+    flex-basis: 42%;
+}
+
+.portal-list ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.portal-list ul li i {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 1px solid #73bf43;
+}
+
+.portal-list ul li a:hover {
+    color: #73bf43;
+}
+
+.notice, .notice .portal-list {
+    padding-left: 18px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.notice .portal-list ul li a {
+    padding-bottom: 10px;
+}
+
+.notice .portal-list ul li a {
+    border-bottom: 1px solid #73bf43;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list-item ul {
+    list-style: none;
+}
+
+.list-item span {
+    text-align: right;
+    display: block;
+}
+
+a.more-btn {
+    background-image: linear-gradient(to bottom, #666, #a6a6a6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2;
+    color: #fff !important;
+    font-size: 17px;
+    padding: 1px 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.more-btn:hover {
+    text-decoration: underline;
+}
+
+.popular-portal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 40px 0;
+}
+
+.popular-portal img {
+    margin-bottom: 15px;
+}
+
+.more-services ul {
+    padding-left: 28px;
+    width: 88%;
+}
+
+/* ================
+04. Footer Area
+=================== */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 5px solid #9E5BBA;
+    background: #ebebeb;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.footer-artwork {
+    position: absolute;
+    top: -77px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-artwork {
+    background: #fff url(../img/moument.png) no-repeat center center / cover;
+    height: 82px;
+}
+
+.footer-left-menu ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+}
+
+.footer-left-menu ul li a, .footer-right a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-left-menu ul li a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+
+.full-row {
+    text-align: right;
+}
+
+.full-row span {
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-img {
+    width: auto !important;
+}
+

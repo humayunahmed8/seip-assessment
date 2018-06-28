@@ -1,0 +1,163 @@
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .main-menu nav ul {
+        justify-content: center;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .search-bar input[type="submit"] {
+        margin-top: 10px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-menu nav ul {
+        justify-content: center;
+    }
+
+    .more-services ul {
+        float: right;
+    }
+
+    .header-bottom {
+        flex-direction: column;
+    }
+
+    .header-bottom-left {
+        text-align: center;
+    }
+
+    .header-bottom-right {
+        justify-content: center;
+    }
+
+    .popular-portal ul {
+        justify-content: space-around;
+    }
+
+    .left-panel {
+        flex-basis: 100%;
+    }
+
+    .right-panel {
+        flex-basis: 100%;
+    }
+
+    .more-services ul {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .popular-portal ul {
+        justify-content: center;
+    }
+
+    div#slider {
+        overflow: hidden;
+    }
+
+}
+
+/* Moblie devices (mobile, 0px to 768px) */
+@media only screen and (max-width:767px) {
+    .header-top {
+        justify-content: center;
+    }
+
+    .main-menu nav ul {
+        justify-content: start;
+    }
+
+    .main-menu nav ul {
+        justify-content: center;
+    }
+
+    .header-bottom {
+        flex-direction: column;
+    }
+
+    .header-bottom-left {
+        text-align: center;
+    }
+
+    .header-bottom-right {
+        justify-content: center;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .search-bar {
+        text-align: center;
+    }
+
+    .search-bar input[type="submit"] {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .news {
+        flex-basis: 100%;
+        padding: 0 10px;
+    }
+
+    .initiatives {
+        flex-basis: 100%;
+        padding: 0 10px;
+    }
+
+    .notice, .notice .portal-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .left-panel {
+        flex-basis: 100%;
+    }
+
+    .right-panel {
+        flex-basis: 100%;
+    }
+
+    .popular-portal ul {
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 48%;
+        justify-content: center;
+    }
+
+    .footer-left-menu ul {
+        padding-bottom: 26px;
+    }
+
+    .full-row {
+        text-align: center;
+    }
+
+}
+
+/* Wide Mobile Layout: (480px to 767px) */
+@media only screen and (min-width:480px) and (max-width:767px) {
+}
